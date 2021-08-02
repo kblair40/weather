@@ -1,6 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .weatherData {
-  border: 1px solid #888;
   width: 50%;
   max-width: 16rem;
   min-width: 12rem;
+  color: white;
+  font-family: Lato;
 }

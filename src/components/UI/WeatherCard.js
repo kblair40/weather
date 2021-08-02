@@ -5,9 +5,9 @@ import classes from "./WeatherCard.module.css";
 
 const WeatherCard = (props) => {
   return (
-    // <div>
-    <Card glass>{props.children}</Card>
-    // {/* </div> */}
+    <Card className={classes.container} glass>
+      {props.children}
+    </Card>
   );
 };
 

@@ -8,8 +8,6 @@ import classes from "./WeatherData.module.css";
 const WeatherData = () => {
   const weatherCtx = useContext(WeatherInfoContext);
   const { cityName, weather, temps } = weatherCtx.weatherInfo;
-  const inputHasError = weatherCtx.inputError;
-  console.log("INPUT HAS ERROR:", inputHasError);
 
   return (
     <section className={classes.container}>

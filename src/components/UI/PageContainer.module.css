@@ -1,0 +1,8 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+  background: #1488cc; /* ƒallback */
+  background: linear-gradient(to left, #283593, #1976d2);
+  overflow: hidden;
+}
