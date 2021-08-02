@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 
 import { WeatherInfoContext } from "../store/contexts/WeatherInfoContext";
-import Icon from "./Icon";
+import Icon from "./UI/Icon";
+import CurrentWeather from "./CurrentWeather";
 import classes from "./WeatherData.module.css";
 
 const WeatherData = () => {
@@ -12,19 +13,7 @@ const WeatherData = () => {
 
   return (
     <section className={classes.container}>
-      <h2 className={classes.cityName}>{cityName}</h2>
-      <div className={classes.dataDisplay}>
-        <div className={classes.temp}>
-          Current Temp: {temps && temps.temp}
-          <sup>o</sup>
-        </div>
-        <div className={classes.weather}>{weather && weather.description}</div>
-        {weather && (
-          <div className={classes.icon}>
-            <Icon icon={weather.icon} />
-          </div>
-        )}
-      </div>
+      <CurrentWeather />
     </section>
   );
 };

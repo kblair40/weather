@@ -5,7 +5,7 @@ import {
   WeatherInfoProvider,
   WeatherInfoContext,
 } from "./store/contexts/WeatherInfoContext";
-import ZipInput from "./components/ZipInput";
+import ZipInput from "./components/UI/ZipInput";
 import WeatherData from "./components/WeatherData";
 import "./App.css";
 
@@ -13,7 +13,6 @@ function App() {
   return (
     <WeatherInfoProvider>
       <div className="App">
-        <h1>Weather</h1>
         <ZipInput />
         <WeatherData />
       </div>

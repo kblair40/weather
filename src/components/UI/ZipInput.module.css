@@ -1,0 +1,33 @@
+.zipForm {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 10rem !important;
+  border-radius: 10px;
+  /* margin: 0 !important;
+  padding: 0 !important; */
+}
+
+.zipInput {
+  margin-bottom: 0.1rem;
+  background: transparent;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  /* box-shadow: 0 0 1px 0.25px rgba(0, 0, 0, 0.2); */
+  width: 100%;
+}
+
+/* .zipInput:focus {
+  border: none !important;
+  outline: none;
+} */
+
+.zipInput:focus-visible,
+.zipInput:focus {
+  border: none !important;
+  outline: none;
+}
